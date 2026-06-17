@@ -2,7 +2,7 @@
   <img src="kiro.jpg" alt="Kiro" width="220" />
 </p>
 
-# edu-plasma-keybindings
+# kiro-plasma-keybindings
 
 Erik's KDE Plasma keyboard-shortcut customisations, shipped as a dotfile drop-in. Part of the `~/EDU/` learning series — drop these in and your Plasma session inherits the Kiro-flavour bindings.
 
@@ -23,14 +23,14 @@ Server = https://erikdubois.github.io/$repo/$arch
 
 ```bash
 sudo pacman -Syu
-sudo pacman -S edu-plasma-keybindings-git
+sudo pacman -S kiro-plasma-keybindings
 ```
 
 ### Manual
 
 ```bash
-git clone https://github.com/erikdubois/edu-plasma-keybindings.git
-cd edu-plasma-keybindings
+git clone https://github.com/kirodubes/kiro-plasma-keybindings.git
+cd kiro-plasma-keybindings
 sudo cp -r etc/skel/. /etc/skel/
 ```
 

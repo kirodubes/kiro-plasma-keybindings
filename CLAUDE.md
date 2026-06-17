@@ -1,4 +1,4 @@
-# CLAUDE.md — edu-plasma-keybindings
+# CLAUDE.md — kiro-plasma-keybindings
 
 ## Project overview
 
