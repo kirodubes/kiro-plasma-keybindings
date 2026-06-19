@@ -71,6 +71,7 @@ Because this is strictly add-only, a handful of ohmychadwm apps land on keys Pla
 | VS Code | `Super+E` / `Super+F2` | Dolphin / Switch to Desktop 2 |
 | Inkscape | `Super+F3` | Switch to Desktop 3 |
 | GIMP | `Super+F4` | Switch to Desktop 4 |
+| Meld | `Super+F5` | Move Mouse to Focus |
 | VLC | `Super+F6` | Move Mouse to Center |
 | VirtualBox | `Super+F7` | Present Windows (Class) |
 | virt-manager | `Super+F9` | Present Windows |
