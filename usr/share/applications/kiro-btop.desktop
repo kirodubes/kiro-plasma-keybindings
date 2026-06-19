@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Kiro: btop
+Comment=Kiro keybinding: Ctrl+Alt+End
+Exec=alacritty -e btop
+Icon=utilities-system-monitor
+NoDisplay=true
+X-KDE-Shortcuts=Ctrl+Alt+End

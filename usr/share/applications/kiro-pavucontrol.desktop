@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Kiro: Pavucontrol
+Comment=Kiro keybinding: Ctrl+Alt+U
+Exec=pavucontrol
+Icon=multimedia-volume-control
+NoDisplay=true
+X-KDE-Shortcuts=Ctrl+Alt+U

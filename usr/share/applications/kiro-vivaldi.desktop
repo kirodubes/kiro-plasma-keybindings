@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Kiro: Vivaldi
+Comment=Kiro keybinding: Ctrl+Alt+V
+Exec=vivaldi-stable
+Icon=vivaldi
+NoDisplay=true
+X-KDE-Shortcuts=Ctrl+Alt+V

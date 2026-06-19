@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Kiro: Tweak Tool
+Comment=Kiro keybinding: Ctrl+Alt+E
+Exec=archlinux-tweak-tool
+Icon=preferences-system
+NoDisplay=true
+X-KDE-Shortcuts=Ctrl+Alt+E

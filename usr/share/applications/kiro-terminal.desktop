@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Kiro: Terminal
+Comment=Kiro keybinding: Meta+Return,Ctrl+Alt+Return
+Exec=alacritty
+Icon=utilities-terminal
+NoDisplay=true
+X-KDE-Shortcuts=Meta+Return,Ctrl+Alt+Return

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Kiro: Update System
+Comment=Kiro keybinding: Ctrl+Alt+Shift+F1,Meta+Ctrl+Shift+F1
+Exec=update-system
+Icon=system-software-update
+NoDisplay=true
+X-KDE-Shortcuts=Ctrl+Alt+Shift+F1,Meta+Ctrl+Shift+F1

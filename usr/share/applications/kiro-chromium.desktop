@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Kiro: Chromium
+Comment=Kiro keybinding: Ctrl+Alt+C,Ctrl+Alt+G
+Exec=chromium -no-default-browser-check
+Icon=chromium
+NoDisplay=true
+X-KDE-Shortcuts=Ctrl+Alt+C,Ctrl+Alt+G

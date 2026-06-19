@@ -1,5 +1,25 @@
 # Changelog
 
+## 2026.06.19
+
+### What Changed
+- Switched the whole package from the baked `kglobalshortcutsrc` approach to **add-only `.desktop` launchers**. The old mechanism shipped a full snapshot of `kglobalshortcutsrc` into `/etc/skel/` (reached new accounts only, froze KDE defaults, never reverted on removal). The new mechanism ships hidden `.desktop` files in `/usr/share/applications/` that register shortcuts in Plasma's `[services]` namespace — system-wide for all users, never touching KDE's built-in `[kwin]`/`[ksmserver]` defaults, and cleanly removable.
+- Ported the ohmychadwm `sxhkd` keymap to 20 `.desktop` launchers (terminal, browsers, tools, Kiro utilities). Verified on a Plasma 6 / KWin 6.7 Wayland VM that `NoDisplay=true` hides the menu entry while `kglobalacceld` still registers the shortcut.
+- Dropped X11-only / natively-handled categories (volume, brightness, media keys, screenshots, wallpaper, compositor toggles, rofi/dmenu launchers) — these are covered by Plasma's own defaults / KRunner / Spectacle.
+- Documented the 6 apps left unbound because their ohmychadwm keys collide with Plasma built-ins (VS Code, Inkscape, GIMP, VLC, VirtualBox, virt-manager on the `Super+F#` row).
+
+### Technical Details
+- Each launcher: `Type=Application` + `NoDisplay=true` + `X-KDE-Shortcuts=` (comma-separated for multiple keys; `\t`-style alternates not used). Shortcuts that collided with KWin/KDE defaults were skipped, not rebound, to preserve clean removal.
+- PKGBUILD updated in the sibling repo: `_destname` changed from `/etc` to `/usr` so the package ships `usr/share/applications/` instead of `etc/skel/`. `readme.install` message updated accordingly.
+
+### Files Modified
+- usr/share/applications/kiro-*.desktop (20 new launchers)
+- etc/skel/.config/kglobalshortcutsrc, kglobalshortcutsrc-or (removed)
+- README.md (rewritten for the add-only mechanism)
+- CLAUDE.md (current state + history)
+- ../KIRO-PKG-BUILD-APPS/kiro-plasma-keybindings/PKGBUILD (_destname /etc → /usr)
+- ../KIRO-PKG-BUILD-APPS/kiro-plasma-keybindings/readme.install (install message)
+
 ## 2026.05.21
 
 ### What Changed

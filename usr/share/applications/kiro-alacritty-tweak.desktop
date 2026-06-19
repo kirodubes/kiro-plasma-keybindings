@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Kiro: Alacritty Tweak Tool
+Comment=Kiro keybinding: Ctrl+Alt+A,Ctrl+Alt+Q
+Exec=alacritty-tweak-tool
+Icon=utilities-terminal
+NoDisplay=true
+X-KDE-Shortcuts=Ctrl+Alt+A,Ctrl+Alt+Q

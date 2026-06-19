@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Kiro: Mintstick (ISO)
+Comment=Kiro keybinding: Ctrl+Alt+M
+Exec=mintstick -m iso
+Icon=media-removable
+NoDisplay=true
+X-KDE-Shortcuts=Ctrl+Alt+M

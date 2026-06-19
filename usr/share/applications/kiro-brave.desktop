@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Kiro: Brave
+Comment=Kiro keybinding: Ctrl+Alt+B
+Exec=brave --password-store=basic
+Icon=brave-browser
+NoDisplay=true
+X-KDE-Shortcuts=Ctrl+Alt+B

@@ -6,7 +6,15 @@ See [README.md](./README.md) for the user-facing description of this repo.
 
 ## Current state
 
-Standard EDU scaffold (`setup.sh`, `up.sh`, optional `cleanup.sh`) plus the five required markdown files. Content lives where the repo actually ships files (typically `etc/skel/` or `usr/share/`).
+Ships Kiro keybindings as **add-only** hidden `.desktop` launchers in `usr/share/applications/` — each carries `NoDisplay=true` + `X-KDE-Shortcuts=`. This registers shortcuts in Plasma's `[services]` namespace without ever touching the built-in `[kwin]`/`[ksmserver]` defaults, so removal is clean and all users (not just `/etc/skel` accounts) get the bindings. Bindings are ported from the ohmychadwm `sxhkd` keymap.
+
+Standard EDU scaffold (`setup.sh`, `up.sh`) plus the required markdown files.
+
+The PKGBUILD lives in [KIRO-PKG-BUILD-APPS/kiro-plasma-keybindings/PKGBUILD](/home/erik/KIRO-PKG-BUILD-APPS/kiro-plasma-keybindings/PKGBUILD) and copies `usr/` into the package (`_destname="/usr"`).
+
+### History
+
+Previously shipped a full baked `etc/skel/.config/kglobalshortcutsrc` (snapshot of the whole shortcuts file, new-accounts-only, frozen, non-revertable). Replaced 2026.06.19 with the add-only `.desktop` mechanism above.
 
 ## Patterns & decisions
 

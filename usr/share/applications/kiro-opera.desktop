@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Kiro: Opera
+Comment=Kiro keybinding: Ctrl+Alt+O
+Exec=opera
+Icon=opera
+NoDisplay=true
+X-KDE-Shortcuts=Ctrl+Alt+O

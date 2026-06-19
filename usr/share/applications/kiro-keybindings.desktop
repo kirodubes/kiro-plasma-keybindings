@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Kiro: Show Keybindings
+Comment=Kiro keybinding: Meta+Ctrl+S
+Exec=kiro-keybindings
+Icon=preferences-desktop-keyboard
+NoDisplay=true
+X-KDE-Shortcuts=Meta+Ctrl+S

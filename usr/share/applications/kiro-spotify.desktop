@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Kiro: Spotify
+Comment=Kiro keybinding: Ctrl+Alt+S
+Exec=spotify
+Icon=spotify
+NoDisplay=true
+X-KDE-Shortcuts=Ctrl+Alt+S

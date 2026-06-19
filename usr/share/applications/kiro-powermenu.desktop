@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Kiro: Power Menu
+Comment=Kiro keybinding: Meta+Shift+X
+Exec=edu-powermenu
+Icon=system-shutdown
+NoDisplay=true
+X-KDE-Shortcuts=Meta+Shift+X

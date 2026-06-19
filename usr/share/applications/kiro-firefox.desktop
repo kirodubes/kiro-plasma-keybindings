@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Kiro: Firefox
+Comment=Kiro keybinding: Ctrl+Alt+F
+Exec=firefox
+Icon=firefox
+NoDisplay=true
+X-KDE-Shortcuts=Ctrl+Alt+F

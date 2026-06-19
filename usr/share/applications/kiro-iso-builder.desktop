@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Kiro: ISO Builder
+Comment=Kiro keybinding: Ctrl+Alt+I
+Exec=kiro-iso-builder
+Icon=media-optical
+NoDisplay=true
+X-KDE-Shortcuts=Ctrl+Alt+I

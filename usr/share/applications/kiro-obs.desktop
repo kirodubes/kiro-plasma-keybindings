@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Kiro: OBS Studio
+Comment=Kiro keybinding: Ctrl+Alt+D
+Exec=obs
+Icon=com.obsproject.Studio
+NoDisplay=true
+X-KDE-Shortcuts=Ctrl+Alt+D
