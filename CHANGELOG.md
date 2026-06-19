@@ -2,6 +2,25 @@
 
 ## 2026.06.19
 
+### Add Super+Shift+Q to close the active window (KWin skel seed)
+- Ported the ohmychadwm "kill focused window" binding to Plasma: `Super+Shift+Q`
+  now also triggers KWin's **Close Window** action (the default `Alt+F4` is kept).
+- **Why a different mechanism than the rest of the package:** closing a window is
+  a built-in KWin action, not an app launch, so it can't ride the `/usr` add-only
+  `.desktop` + `X-KDE-Shortcuts` mechanism (that can only run an `Exec=`). It has
+  to live in the user's `kglobalshortcutsrc`.
+- **How:** ships a **minimal** `etc/skel/.config/kglobalshortcutsrc` with only the
+  `[kwin] Window Close` line — `Alt+F4\tMeta+Shift+Q,Alt+F4,Close Window` (real
+  tab between the two active shortcuts). Not the old full frozen snapshot — every
+  other shortcut still falls back to KDE defaults. New Kiro accounts pick it up at
+  first login (no `kglobalaccel` reload needed). Trade-off accepted: new-accounts
+  only, so existing upgraders don't get it retroactively.
+- PKGBUILD now also packages `etc/` (previously `usr/`-only).
+
+### Files Modified
+- `etc/skel/.config/kglobalshortcutsrc` (new — minimal `[kwin]` seed)
+- `../KIRO-PKG-BUILD-APPS/kiro-plasma-keybindings/PKGBUILD` (package `etc/`)
+
 ### What Changed
 - Switched the whole package from the baked `kglobalshortcutsrc` approach to **add-only `.desktop` launchers**. The old mechanism shipped a full snapshot of `kglobalshortcutsrc` into `/etc/skel/` (reached new accounts only, froze KDE defaults, never reverted on removal). The new mechanism ships hidden `.desktop` files in `/usr/share/applications/` that register shortcuts in Plasma's `[services]` namespace — system-wide for all users, never touching KDE's built-in `[kwin]`/`[ksmserver]` defaults, and cleanly removable.
 - Ported the ohmychadwm `sxhkd` keymap to 20 `.desktop` launchers (terminal, browsers, tools, Kiro utilities). Verified on a Plasma 6 / KWin 6.7 Wayland VM that `NoDisplay=true` hides the menu entry while `kglobalacceld` still registers the shortcut.
