@@ -7,13 +7,17 @@
 - Ported the ohmychadwm `sxhkd` keymap to 20 `.desktop` launchers (terminal, browsers, tools, Kiro utilities). Verified on a Plasma 6 / KWin 6.7 Wayland VM that `NoDisplay=true` hides the menu entry while `kglobalacceld` still registers the shortcut.
 - Dropped X11-only / natively-handled categories (volume, brightness, media keys, screenshots, wallpaper, compositor toggles, rofi/dmenu launchers) — these are covered by Plasma's own defaults / KRunner / Spectacle.
 - Documented the 6 apps left unbound because their ohmychadwm keys collide with Plasma built-ins (VS Code, Inkscape, GIMP, VLC, VirtualBox, virt-manager on the `Super+F#` row).
+- **Bugfix (same day):** first build of the package shipped to the wrong path and nothing registered. Two causes, both fixed:
+  - PKGBUILD copied to `/usr/usr/share/applications/` (doubled `usr`) — the license step pre-creates `${pkgdir}/usr`, so `cp -r src/usr ${pkgdir}/usr` nested. Switched to `cp -a src/usr/. ${pkgdir}/usr/`.
+  - Renamed all 20 launchers `kiro-*.desktop` → `kiro-kb-*.desktop` to avoid filename collisions with real launchers already in `/usr/share/applications` (`kiro-iso-builder.desktop`, `kiro-keybindings.desktop`).
+  - Verified on the VM that registration is **async** (~10s after `kbuildsycoca6`/login) and that the `X-KDE-Shortcuts` default becomes the active key (confirmed non-empty key code via the kglobalaccel D-Bus interface).
 
 ### Technical Details
 - Each launcher: `Type=Application` + `NoDisplay=true` + `X-KDE-Shortcuts=` (comma-separated for multiple keys; `\t`-style alternates not used). Shortcuts that collided with KWin/KDE defaults were skipped, not rebound, to preserve clean removal.
 - PKGBUILD updated in the sibling repo: `_destname` changed from `/etc` to `/usr` so the package ships `usr/share/applications/` instead of `etc/skel/`. `readme.install` message updated accordingly.
 
 ### Files Modified
-- usr/share/applications/kiro-*.desktop (20 new launchers)
+- usr/share/applications/kiro-kb-*.desktop (20 new launchers, `kiro-kb-` prefixed)
 - etc/skel/.config/kglobalshortcutsrc, kglobalshortcutsrc-or (removed)
 - README.md (rewritten for the add-only mechanism)
 - CLAUDE.md (current state + history)
