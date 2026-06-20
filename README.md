@@ -33,7 +33,7 @@ X-KDE-Shortcuts=Meta+Return,Ctrl+Alt+Return
 | Shortcut(s) | Action |
 |---|---|
 | `Meta+Return`, `Ctrl+Alt+Return` | Terminal (alacritty) |
-| `Meta+F8`, `Meta+Shift+Return` | File manager (thunar) |
+| `Meta+F8`, `Meta+Shift+Return` | File manager (dolphin) |
 | `Ctrl+Alt+End` | btop |
 | `Ctrl+Alt+V` | Vivaldi |
 | `Ctrl+Alt+F` | Firefox |

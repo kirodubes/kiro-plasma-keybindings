@@ -2,7 +2,7 @@
 Type=Application
 Name=Kiro: File Manager
 Comment=Kiro keybinding: Meta+F8,Meta+Shift+Return
-Exec=thunar
+Exec=dolphin
 Icon=system-file-manager
 NoDisplay=true
 X-KDE-Shortcuts=Meta+F8,Meta+Shift+Return
