@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Kiro: Variety favorite wallpaper
+Comment=Kiro keybinding: Meta+Alt+F
+Exec=variety -f
+Icon=variety
+NoDisplay=true
+X-KDE-Shortcuts=Meta+Alt+F

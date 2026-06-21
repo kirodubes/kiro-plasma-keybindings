@@ -12,7 +12,7 @@ working. Installed system-wide; active after `kbuildsycoca6` or next login (regi
 | Shortcut(s) | Action | Command |
 |---|---|---|
 | `Meta+Return`, `Ctrl+Alt+Return` | Terminal | `alacritty` |
-| `Meta+F8`, `Meta+Shift+Return` | File manager | `thunar` |
+| `Meta+F8`, `Meta+Shift+Return` | File manager | `dolphin` |
 | `Ctrl+Alt+End` | System monitor | `alacritty -e btop` |
 | `Ctrl+Alt+V` | Vivaldi | `vivaldi-stable` |
 | `Ctrl+Alt+F` | Firefox | `firefox` |
@@ -31,6 +31,9 @@ working. Installed system-wide; active after `kbuildsycoca6` or next login (regi
 | `Meta+X`, `Ctrl+Alt+K`, `Ctrl+Alt+L` | Logout | `archlinux-logout` |
 | `Meta+Shift+X` | Power menu | `edu-powermenu` |
 | `Meta+Ctrl+S` | Show keybindings | `kiro-keybindings` |
+| `Meta+Alt+N` | Variety: next wallpaper | `variety -n` |
+| `Meta+Alt+P` | Variety: previous wallpaper | `variety -p` |
+| `Meta+Alt+F` | Variety: favorite wallpaper | `variety -f` |
 
 ## Handled by Plasma natively (not shipped)
 
@@ -40,7 +43,10 @@ Already covered by Plasma's own defaults, so Kiro doesn't duplicate them:
 - **Screenshots** — Spectacle (`Print`, `Meta+Shift+S`)
 - **App launcher / run command** — KRunner (`Meta`, `Alt+Space`)
 - **Window management** (workspaces, tiling, focus, move/resize) — KWin defaults
-- **Wallpaper / compositor** — KDE wallpaper / KWin
+- **Compositor** — KWin
+
+Variety wallpaper *switching* (next/previous/favorite) **is** now shipped above
+(`Meta+Alt+N/P/F`); the static desktop wallpaper itself stays KDE-native.
 
 ## Shortcuts that override Plasma built-ins
 

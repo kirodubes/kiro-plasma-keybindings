@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026.06.20
+
+### Switch file-manager keybinding from thunar to dolphin
+- The `Meta+F8`, `Meta+Shift+Return` file-manager binding now launches
+  `dolphin` instead of `thunar` — the native Plasma file manager fits this
+  Plasma-targeted package.
+- **Files Modified:** `usr/share/applications/kiro-kb-filemanager.desktop`,
+  `README.md`, `SHORTCUTS.md`.
+
 ## 2026.06.19
 
 ### Add Super+Shift+Q to close the active window (KWin skel seed)

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Kiro: Variety previous wallpaper
+Comment=Kiro keybinding: Meta+Alt+P
+Exec=variety -p
+Icon=variety
+NoDisplay=true
+X-KDE-Shortcuts=Meta+Alt+P
