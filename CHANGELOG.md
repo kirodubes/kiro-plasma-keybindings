@@ -1,5 +1,29 @@
 # Changelog
 
+## 2026.06.21
+
+### Add Variety wallpaper-switching shortcuts (next / previous / favorite)
+- **What Changed:** Ported the ohmychadwm Variety bindings to Plasma as three new
+  add-only `.desktop` launchers: `Meta+Alt+N` → `variety -n` (next), `Meta+Alt+P`
+  → `variety -p` (previous), `Meta+Alt+F` → `variety -f` (favorite).
+- **Why these key combos (not the sxhkdrc's plain `Alt+N/P/F` + `Alt+Arrows`):**
+  plain `Alt+letter` and `Alt+Left/Right/Up/Down` would, as *global* Plasma
+  shortcuts, shadow browser/Dolphin Back-Forward and app menu mnemonics. The
+  `Meta+Alt+…` namespace is unused by KWin defaults, so the package keeps its
+  conflict-free, clean-removal promise.
+- **Scope:** only the three flags requested (`-n`/`-p`/`-f`). Trash (`-t`),
+  `--toggle-pause`, `--resume`, and `--selector` were left out by choice.
+- **Technical Details:** same hidden-launcher pattern as the rest of the package
+  (`NoDisplay=true` + `X-KDE-Shortcuts=`), `Icon=variety`. No PKGBUILD logic change
+  — `usr/` is copied wholesale; `pkgrel` bumped for the rebuild. Moved Variety out
+  of the README/SHORTCUTS "handled natively / not shipped" sections.
+- **Files Modified:**
+  - `usr/share/applications/kiro-kb-variety-next.desktop` (new)
+  - `usr/share/applications/kiro-kb-variety-previous.desktop` (new)
+  - `usr/share/applications/kiro-kb-variety-favorite.desktop` (new)
+  - `README.md`, `SHORTCUTS.md`
+  - `../KIRO-PKG-BUILD-APPS/kiro-plasma-keybindings/PKGBUILD` (`pkgrel` bump)
+
 ## 2026.06.20
 
 ### Switch file-manager keybinding from thunar to dolphin

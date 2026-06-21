@@ -52,6 +52,9 @@ X-KDE-Shortcuts=Meta+Return,Ctrl+Alt+Return
 | `Meta+X`, `Ctrl+Alt+K`, `Ctrl+Alt+L` | archlinux-logout |
 | `Meta+Shift+X` | edu-powermenu |
 | `Meta+Ctrl+S` | Show keybindings |
+| `Meta+Alt+N` | Variety: next wallpaper (`variety -n`) |
+| `Meta+Alt+P` | Variety: previous wallpaper (`variety -p`) |
+| `Meta+Alt+F` | Variety: favorite wallpaper (`variety -f`) |
 
 ## Deliberately handled by Plasma natively (not shipped)
 
@@ -60,7 +63,10 @@ These ohmychadwm bindings are X11-only or already covered by Plasma's own defaul
 - **Volume / brightness / media keys** — handled natively by kmix / PowerDevil.
 - **Screenshots** — use Spectacle (`Print`, `Meta+Shift+S`).
 - **App launcher** (rofi / dmenu / appfinder) — use KRunner (`Meta`, `Alt+Space`).
-- **Wallpaper** (variety / pywal) and **compositor toggles** (picom / fastcompmgr) — KWin handles these.
+- **pywal** and **compositor toggles** (picom / fastcompmgr) — X11-only, not portable to KWin.
+
+> Variety wallpaper *switching* (next/previous/favorite) **is** shipped — see the
+> `Meta+Alt+N/P/F` rows above. The static desktop background stays KDE-native.
 
 ## Not bound — collide with Plasma built-ins
 
