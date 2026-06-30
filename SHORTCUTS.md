@@ -19,16 +19,20 @@ working. Installed system-wide; active after `kbuildsycoca6` or next login (regi
 | `Ctrl+Alt+B` | Brave | `brave --password-store=basic` |
 | `Ctrl+Alt+C`, `Ctrl+Alt+G` | Chromium | `chromium -no-default-browser-check` |
 | `Ctrl+Alt+O` | Opera | `opera` |
-| `Ctrl+Alt+S` | Spotify | `spotify` |
+| `Meta+F10` | Spotify | `spotify` |
 | `Ctrl+Alt+D` | OBS Studio | `obs` |
 | `Ctrl+Alt+E` | Tweak Tool | `archlinux-tweak-tool` |
 | `Ctrl+Alt+A`, `Ctrl+Alt+Q` | Alacritty Tweak Tool | `alacritty-tweak-tool` |
+| `Ctrl+Alt+S` | Fish Tweak Tool | `fish-tweak-tool` |
+| `Ctrl+Alt+Z`, `Ctrl+Alt+W` | Fastfetch Tweak Tool | `fastfetch-tweak-tool` |
 | `Ctrl+Alt+P` | Pamac | `pamac-manager` |
 | `Ctrl+Alt+U` | Pavucontrol | `pavucontrol` |
 | `Ctrl+Alt+M` | Mintstick (ISO writer) | `mintstick -m iso` |
 | `Ctrl+Alt+I` | Kiro ISO Builder | `kiro-iso-builder` |
 | `Ctrl+Alt+Shift+F1`, `Meta+Ctrl+Shift+F1` | Update system | `update-system` |
-| `Meta+X`, `Ctrl+Alt+K`, `Ctrl+Alt+L` | Logout | `archlinux-logout` |
+| `Ctrl+Alt+R` | Lock screen | `archlinux-betterlockscreen` |
+| `Meta+X`, `Ctrl+Alt+K` | Logout | `archlinux-logout` |
+| `Ctrl+Alt+L` | Logout settings | `archlinux-logout --settings` |
 | `Meta+Shift+X` | Power menu | `edu-powermenu` |
 | `Meta+Ctrl+S` | Show keybindings | `kiro-keybindings` |
 | `Meta+Alt+N` | Variety: next wallpaper | `variety -n` |

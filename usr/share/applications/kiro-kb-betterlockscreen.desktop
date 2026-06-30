@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Kiro: Lock Screen
+Comment=Kiro keybinding: Ctrl+Alt+R
+Exec=archlinux-betterlockscreen
+Icon=system-lock-screen
+NoDisplay=true
+X-KDE-Shortcuts=Ctrl+Alt+R

@@ -1,0 +1,8 @@
+###############################################################################
+#  KEYBINDINGS — KDE Plasma
+#  Source: etc/skel/.config/kglobalshortcutsrc
+#  Generated: 2026.06.30 by /kiro-keybindings-all — DO NOT EDIT BY HAND
+###############################################################################
+
+── 2. Window Management ───────────────────────────────────────────────────────
+  alt + F4                Close Window

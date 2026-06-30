@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Kiro: Fastfetch Tweak Tool
+Comment=Kiro keybinding: Ctrl+Alt+Z,Ctrl+Alt+W
+Exec=fastfetch-tweak-tool
+Icon=utilities-terminal
+NoDisplay=true
+X-KDE-Shortcuts=Ctrl+Alt+Z,Ctrl+Alt+W

@@ -1,5 +1,36 @@
 # Changelog
 
+## 2026.06.30
+
+### Add tweak-tool + logout-settings + lockscreen launchers; move Spotify to Meta+F10 (sync with ohmychadwm)
+- **What Changed:** Added add-only `.desktop` launchers for `fish-tweak-tool` on
+  `Ctrl+Alt+S`, `fastfetch-tweak-tool` on `Ctrl+Alt+Z` (+ the azerty/qwerty swap
+  partner `Ctrl+Alt+W`), and `archlinux-betterlockscreen` on `Ctrl+Alt+R`, matching
+  the ohmychadwm `sxhkdrc` source. Spotify previously
+  squatted on `Ctrl+Alt+S` in this repo (drifted from source); moved it to
+  `Meta+F10` (`super + F10`) where the source actually binds it, freeing the slot.
+  Also split `Ctrl+Alt+L` out of the plain Logout launcher into its own
+  `archlinux-logout --settings` launcher — the source binds `ctrl + alt + l` to
+  `--settings`, not plain logout. The Logout launcher now carries only `Meta+X`
+  and `Ctrl+Alt+K`.
+- **Why:** ohmychadwm is the canonical keymap source. `fish-tweak-tool` and
+  `fastfetch-tweak-tool` were the missing tweak-tool bindings here, the repo's
+  Spotify shortcut had diverged from the source (causing the collision), and
+  `Ctrl+Alt+L` was firing plain logout instead of the settings dialog.
+- **Technical Details:** same hidden-launcher pattern (`NoDisplay=true` +
+  `X-KDE-Shortcuts=`), `Icon=utilities-terminal` (fish-tweak-tool is terminal-based,
+  consistent with the alacritty-tweak-tool launcher). PKGBUILD needs a `pkgrel` bump
+  for the rebuild (`usr/` is copied wholesale).
+- **Files Modified:**
+  - `usr/share/applications/kiro-kb-fish-tweak-tool.desktop` (new)
+  - `usr/share/applications/kiro-kb-fastfetch-tweak-tool.desktop` (new)
+  - `usr/share/applications/kiro-kb-logout-settings.desktop` (new)
+  - `usr/share/applications/kiro-kb-betterlockscreen.desktop` (new)
+  - `usr/share/applications/kiro-kb-spotify.desktop` (`Ctrl+Alt+S` → `Meta+F10`)
+  - `usr/share/applications/kiro-kb-logout.desktop` (drop `Ctrl+Alt+L`)
+  - `README.md`, `SHORTCUTS.md` (keybinding tables)
+  - `../KIRO-PKG-BUILD-APPS/kiro-plasma-keybindings/PKGBUILD` (`pkgrel` 107 → 108)
+
 ## 2026.06.21
 
 ### Add Variety wallpaper-switching shortcuts (next / previous / favorite)

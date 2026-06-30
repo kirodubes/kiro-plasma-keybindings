@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Kiro: Fish Tweak Tool
+Comment=Kiro keybinding: Ctrl+Alt+S
+Exec=fish-tweak-tool
+Icon=utilities-terminal
+NoDisplay=true
+X-KDE-Shortcuts=Ctrl+Alt+S

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Kiro: Logout Settings
+Comment=Kiro keybinding: Ctrl+Alt+L
+Exec=archlinux-logout --settings
+Icon=system-log-out
+NoDisplay=true
+X-KDE-Shortcuts=Ctrl+Alt+L

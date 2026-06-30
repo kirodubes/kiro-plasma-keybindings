@@ -40,16 +40,20 @@ X-KDE-Shortcuts=Meta+Return,Ctrl+Alt+Return
 | `Ctrl+Alt+B` | Brave |
 | `Ctrl+Alt+C`, `Ctrl+Alt+G` | Chromium |
 | `Ctrl+Alt+O` | Opera |
-| `Ctrl+Alt+S` | Spotify |
+| `Meta+F10` | Spotify |
 | `Ctrl+Alt+D` | OBS Studio |
 | `Ctrl+Alt+E` | archlinux-tweak-tool |
 | `Ctrl+Alt+A`, `Ctrl+Alt+Q` | alacritty-tweak-tool |
+| `Ctrl+Alt+S` | fish-tweak-tool |
+| `Ctrl+Alt+Z`, `Ctrl+Alt+W` | fastfetch-tweak-tool |
 | `Ctrl+Alt+P` | Pamac |
 | `Ctrl+Alt+U` | Pavucontrol |
 | `Ctrl+Alt+M` | Mintstick (ISO writer) |
 | `Ctrl+Alt+I` | Kiro ISO Builder |
 | `Ctrl+Alt+Shift+F1`, `Meta+Ctrl+Shift+F1` | update-system |
-| `Meta+X`, `Ctrl+Alt+K`, `Ctrl+Alt+L` | archlinux-logout |
+| `Ctrl+Alt+R` | archlinux-betterlockscreen (lock screen) |
+| `Meta+X`, `Ctrl+Alt+K` | archlinux-logout |
+| `Ctrl+Alt+L` | archlinux-logout --settings |
 | `Meta+Shift+X` | edu-powermenu |
 | `Meta+Ctrl+S` | Show keybindings |
 | `Meta+Alt+N` | Variety: next wallpaper (`variety -n`) |

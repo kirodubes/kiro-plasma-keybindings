@@ -1,8 +1,8 @@
 [Desktop Entry]
 Type=Application
 Name=Kiro: Logout
-Comment=Kiro keybinding: Meta+X,Ctrl+Alt+K,Ctrl+Alt+L
+Comment=Kiro keybinding: Meta+X,Ctrl+Alt+K
 Exec=archlinux-logout
 Icon=system-log-out
 NoDisplay=true
-X-KDE-Shortcuts=Meta+X,Ctrl+Alt+K,Ctrl+Alt+L
+X-KDE-Shortcuts=Meta+X,Ctrl+Alt+K
