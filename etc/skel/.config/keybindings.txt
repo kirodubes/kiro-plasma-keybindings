@@ -1,8 +1,41 @@
 ###############################################################################
 #  KEYBINDINGS — KDE Plasma
-#  Source: etc/skel/.config/kglobalshortcutsrc
+#  Source: usr/share/applications/kiro-kb-*.desktop + etc/skel/.config/kglobalshortcutsrc
 #  Generated: 2026.06.30 by /kiro-keybindings-all — DO NOT EDIT BY HAND
 ###############################################################################
 
-── 2. Window Management ───────────────────────────────────────────────────────
+── 1. Applications & Launchers ───────────────────────────────────────────────
+  super + Return          Terminal
+  super + F8              File Manager
+  ctrl + alt + v          Vivaldi
+  ctrl + alt + f          Firefox
+  ctrl + alt + b          Brave
+  ctrl + alt + c          Chromium
+  ctrl + alt + o          Opera
+  super + F10             Spotify
+  ctrl + alt + d          OBS Studio
+  ctrl + alt + End        btop
+  ctrl + alt + u          Pavucontrol
+  ctrl + alt + p          Pamac
+  ctrl + alt + e          Tweak Tool
+  ctrl + alt + a          Alacritty Tweak Tool
+  ctrl + alt + s          Fish Tweak Tool
+  ctrl + alt + z          Fastfetch Tweak Tool
+  ctrl + alt + i          ISO Builder
+  ctrl + alt + m          Mintstick (ISO)
+
+── 2. Window Management ──────────────────────────────────────────────────────
   alt + F4                Close Window
+
+── 6. Multimedia & Hardware ──────────────────────────────────────────────────
+  super + alt + n         Variety next wallpaper
+  super + alt + p         Variety previous wallpaper
+  super + alt + f         Variety favorite wallpaper
+
+── 8. System & Session ───────────────────────────────────────────────────────
+  ctrl + alt + shift + F1 Update System
+  ctrl + alt + r          Lock Screen
+  ctrl + alt + l          Logout Settings
+  super + x               Logout
+  super + shift + x       Power Menu
+  super + ctrl + s        Show Keybindings

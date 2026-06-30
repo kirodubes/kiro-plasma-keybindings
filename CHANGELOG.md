@@ -31,6 +31,27 @@
   - `README.md`, `SHORTCUTS.md` (keybinding tables)
   - `../KIRO-PKG-BUILD-APPS/kiro-plasma-keybindings/PKGBUILD` (`pkgrel` 107 → 108)
 
+### Regenerate the cheatsheet `keybindings.txt` from the real shortcut sources (28 bindings, was 1)
+- **What Changed:** Rebuilt `etc/skel/.config/keybindings.txt` so the kiro-keybindings
+  cheatsheet app shows all of Plasma's Kiro shortcuts. It previously listed a single
+  binding (`alt + F4` Close window) because it was generated only from
+  `kglobalshortcutsrc` — but every Kiro launch shortcut on Plasma actually lives in the
+  `usr/share/applications/kiro-kb-*.desktop` files' `X-KDE-Shortcuts=` lines, which the
+  generator never read. The file now carries all 28 bindings (27 launcher shortcuts +
+  the KWin close-window action), sorted into the canonical Applications / Window
+  Management / System & Session sections.
+- **Why:** the cheatsheet was effectively empty on Plasma — opening it told the user
+  almost nothing. Pairing this with the app-side path fix (kiro-keybindings) makes the
+  searchable cheatsheet fully usable on the Plasma edition.
+- **Technical Details:** ported each `kiro-kb-*.desktop`'s **primary** `X-KDE-Shortcuts`
+  combo + its `Name=Kiro: <action>` text, normalized `Meta`→`super`, lowercased modifiers,
+  and merged in the `kglobalshortcutsrc` `[kwin]` close-window line. Header `Source:` line
+  updated to name both inputs. The `/kiro-keybindings-all` generator command was corrected
+  to read both sources for Plasma going forward.
+- **Files Modified:**
+  - `etc/skel/.config/keybindings.txt` (regenerated: 1 → 28 bindings)
+  - rebuild auto-bumps `pkgrel` via `build-data.sh` — no manual PKGBUILD edit
+
 ## 2026.06.21
 
 ### Add Variety wallpaper-switching shortcuts (next / previous / favorite)
