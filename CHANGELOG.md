@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026.10.22
+
+### Meta+Shift+X opens archlinux-logout
+
+**What Changed.** Meta+Shift+X ran `edu-powermenu`, the tiling WM power menu. The Kiro ISO no longer ships that menu on Plasma, so the key did nothing. It now opens `archlinux-logout`, the same logout screen as Meta+X and Ctrl+Alt+K. Meta+Shift+X stays the power key on every Kiro desktop.
+
+**Technical Details.** `Exec=` in `kiro-kb-powermenu.desktop` changed; the file name stays, so the existing shortcut entry is updated in place. `archlinux-logout` is part of the Kiro core on every edition, so no new dependency is needed.
+
+**Files Modified.** `usr/share/applications/kiro-kb-powermenu.desktop`, `SHORTCUTS.md`, `README.md`
+
 ## 2026.09.27
 
 ### What Changed

@@ -33,7 +33,7 @@ working. Installed system-wide; active after `kbuildsycoca6` or next login (regi
 | `Ctrl+Alt+R` | Lock screen | `archlinux-betterlockscreen` |
 | `Meta+X`, `Ctrl+Alt+K` | Logout | `archlinux-logout` |
 | `Ctrl+Alt+L` | Logout settings | `archlinux-logout --settings` |
-| `Meta+Shift+X` | Power menu | `edu-powermenu` |
+| `Meta+Shift+X` | Logout | `archlinux-logout` |
 | `Meta+Ctrl+S` | Show keybindings | `kiro-keybindings` |
 | `Meta+Alt+N` | Variety: next wallpaper | `variety -n` |
 | `Meta+Alt+P` | Variety: previous wallpaper | `variety -p` |

@@ -1,8 +1,8 @@
 [Desktop Entry]
 Type=Application
-Name=Kiro: Power Menu
+Name=Kiro: Logout (power key)
 Comment=Kiro keybinding: Meta+Shift+X
-Exec=edu-powermenu
+Exec=archlinux-logout
 Icon=system-shutdown
 NoDisplay=true
 X-KDE-Shortcuts=Meta+Shift+X

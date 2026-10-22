@@ -54,7 +54,7 @@ X-KDE-Shortcuts=Meta+Return,Ctrl+Alt+Return
 | `Ctrl+Alt+R` | archlinux-betterlockscreen (lock screen) |
 | `Meta+X`, `Ctrl+Alt+K` | archlinux-logout |
 | `Ctrl+Alt+L` | archlinux-logout --settings |
-| `Meta+Shift+X` | edu-powermenu |
+| `Meta+Shift+X` | archlinux-logout |
 | `Meta+Ctrl+S` | Show keybindings |
 | `Meta+Alt+N` | Variety: next wallpaper (`variety -n`) |
 | `Meta+Alt+P` | Variety: previous wallpaper (`variety -p`) |
